@@ -1,0 +1,12 @@
+[project]
+name = "glitch-engine"
+version = "0.1.0"
+description = "Reusable GLITCH HIGH montage engine for Windows, Python and FFmpeg."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+glitch-engine = "engine.main:main"
+
+[tool.uv]
+package = false
