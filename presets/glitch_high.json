@@ -1,0 +1,92 @@
+{
+  "name": "glitch_high",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "image_seconds": 2.0,
+  "video_codec": "libx264",
+  "audio_codec": "aac",
+  "render": {
+    "aspect_strategy": "bars"
+  },
+  "crf": 18,
+  "noise": 18,
+  "contrast": 1.35,
+  "saturation": 1.8,
+  "rgb_shift": {"rh": 6, "rv": 2, "gh": -4, "bv": -2},
+  "montage": {
+    "intensity": "HIGH",
+    "phase_order": ["INTRO", "FRAGMENTATION", "CHAOS", "COLLAPSE"],
+    "phases": [
+      {
+        "name": "INTRO",
+        "start": 0.0,
+        "end": 0.15,
+        "skip_interval": 127,
+        "skip_span": 2,
+        "repeat_loops": 0,
+        "freeze_frames": 1,
+        "displacement": 12,
+        "corruption_interval": 71,
+        "ghost_window": 8,
+        "rgb_window": 0.06,
+        "speed_fast": 0.75,
+        "speed_slow": 1.25,
+        "noise": 14,
+        "rgb_shift": {"rh": 5, "rv": 1, "gh": -3, "bv": -2}
+      },
+      {
+        "name": "FRAGMENTATION",
+        "start": 0.15,
+        "end": 0.45,
+        "skip_interval": 83,
+        "skip_span": 4,
+        "repeat_loops": 1,
+        "freeze_frames": 2,
+        "displacement": 28,
+        "corruption_interval": 43,
+        "ghost_window": 14,
+        "rgb_window": 0.10,
+        "speed_fast": 0.55,
+        "speed_slow": 1.55,
+        "noise": 20,
+        "rgb_shift": {"rh": 10, "rv": 2, "gh": -6, "bv": -4}
+      },
+      {
+        "name": "CHAOS",
+        "start": 0.45,
+        "end": 0.85,
+        "skip_interval": 41,
+        "skip_span": 8,
+        "repeat_loops": 3,
+        "freeze_frames": 4,
+        "displacement": 64,
+        "corruption_interval": 23,
+        "ghost_window": 22,
+        "rgb_window": 0.18,
+        "speed_fast": 0.32,
+        "speed_slow": 2.25,
+        "noise": 34,
+        "rgb_shift": {"rh": 22, "rv": 5, "gh": -14, "bv": -9}
+      },
+      {
+        "name": "COLLAPSE",
+        "start": 0.85,
+        "end": 1.0,
+        "skip_interval": 29,
+        "skip_span": 12,
+        "repeat_loops": 2,
+        "freeze_frames": 12,
+        "displacement": 44,
+        "corruption_interval": 17,
+        "ghost_window": 28,
+        "rgb_window": 0.24,
+        "speed_fast": 0.18,
+        "speed_slow": 3.0,
+        "noise": 42,
+        "transition_strength": 0.48,
+        "rgb_shift": {"rh": -28, "rv": -6, "gh": 18, "bv": 12}
+      }
+    ]
+  }
+}
