@@ -1,0 +1,6 @@
+interface:
+  display_name: "GLITCH HIGH Engine"
+  short_description: "Render reusable glitch montages"
+  default_prompt: "Use $glitch-high to render and validate a reusable GLITCH HIGH montage from the project inputs."
+policy:
+  allow_implicit_invocation: true
